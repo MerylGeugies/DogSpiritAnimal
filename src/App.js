@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-// import Buttons from './components/Buttons'
+import Buttons from './components/Buttons'
 import store from './store';
 import { Provider } from 'react-redux';
-import { Route, Link } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 import DogList from './components/DogList';
 
 
@@ -13,14 +13,16 @@ function App() {
       <div className="App">
         <main>
 
-          {/* <Route exact path="/daggame" component={DogGame1} /> */}
-          <h1>Dog Spirit Animal APP</h1>
+          <h1>Dog Spirit Animal App</h1>
           <div>
-            <Link to="/studybreeds"><p className="link">Learn dog breeds</p></Link>
-            <Link to="/"><p className="link">Test your skills and play a dog game</p></Link>
-
+            <NavLink to="/studybreeds">
+              <Buttons buttonText={'Learn dog breeds'} buttonClass={"learnbutton"} />
+            </NavLink>
+            <NavLink to="/">
+              <Buttons buttonText={'Test your skills and play a dog game'} buttonClass={"playgamebutton"} />
+            </NavLink>
+            <Route exact path="/studybreeds" component={DogList} />
           </div>
-          <Route exact path="/studybreeds" component={DogList} />
         </main>
         <footer>
           <p>Made with ❤ by Bassam, Meryl and Rick</p>
@@ -28,7 +30,7 @@ function App() {
 
 
       </div>
-    </Provider >
+    </Provider>
   );
 }
 
