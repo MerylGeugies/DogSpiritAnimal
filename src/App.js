@@ -3,14 +3,13 @@ import './App.css';
 import Buttons from './components/Buttons'
 import store from './store';
 import { Provider } from 'react-redux';
-import DogList from './component/DogList';
+
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
         <main>
-        <DogList></DogList>
           <h1>Dog Spirit Animal APP</h1>
           <div>
             <Buttons buttonText={'Learn dog breeds'} buttonClass={"learnbutton"} handleclick={() => alert('let\'s learn some dog breeds!')} />
