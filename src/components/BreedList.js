@@ -21,5 +21,4 @@ const BreedList = props => {
         </div>
         )
     }
-}
 export default BreedList
