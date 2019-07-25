@@ -12,7 +12,6 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <main>
-
           <h1>Dog Spirit Animal App</h1>
           <div>
             <NavLink to="/studybreeds">
