@@ -5,6 +5,7 @@ import store from './store';
 import { Provider } from 'react-redux';
 import { Route, NavLink } from 'react-router-dom';
 import DogList from './components/DogList';
+import DogImagesContainer from './components/DogImagesContainer';
 
 
 function App() {
@@ -21,7 +22,9 @@ function App() {
               <Buttons buttonText={'Test your skills and play a dog game'} buttonClass={"playgamebutton"} />
             </NavLink>
             <Route exact path="/studybreeds" component={DogList} />
+
           </div>
+          <DogImagesContainer />
         </main>
         <footer>
           <p>Made with ❤ by Bassam, Meryl and Rick</p>
