@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
 import BreedListContainer from './components/BreedListContainer';
 import DogGameContainer from './components/DogGameContainer';
-
+import DogImagesContainer from './components/DogImagesContainer';
 
 function App() {
   return (
