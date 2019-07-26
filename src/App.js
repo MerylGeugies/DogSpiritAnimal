@@ -7,6 +7,7 @@ import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
 import BreedListContainer from './components/BreedListContainer';
 import DogGameContainer from './components/DogGameContainer';
 
+
 function App() {
   return (
     <Provider store={store}>
@@ -30,8 +31,8 @@ function App() {
 
             <Route path="/game" component={DogGameContainer} />
             <Route path="/studybreeds" component={BreedListContainer} />
+            <Route path="/dog-breeds/:breed" component={DogImagesContainer} />
 
-            {/* <DogImagesContainer /> */}
           </main>
 
           <footer>
