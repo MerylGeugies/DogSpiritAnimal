@@ -4,9 +4,8 @@ import Buttons from './components/Buttons'
 import store from './store';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
-//import DogList from './components/DogList';
-// import DogImagesContainer from './components/DogImagesContainer';
 import BreedListContainer from './components/BreedListContainer';
+import DogImagesContainer from './components/DogImagesContainer';
 
 function App() {
   return (
@@ -30,8 +29,8 @@ function App() {
             )} />
 
             <Route path="/studybreeds" component={BreedListContainer} />
+            <Route path="/dog-breeds/:breed" component={DogImagesContainer} />
 
-            {/* <DogImagesContainer /> */}
           </main>
 
           <footer>
