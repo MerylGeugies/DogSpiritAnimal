@@ -1,6 +1,8 @@
-import { combinedReducers } from 'redux'
-import dogImages from './dogImages'
+// import { combinedReducers } from 'redux'
+import images from './images'
+import breeds from './breeds'
 
-export default combinedReducers({
-  dogImages
-})
+export default {
+  images,
+  breeds
+}
