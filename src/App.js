@@ -4,9 +4,8 @@ import Buttons from './components/Buttons'
 import store from './store';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
-//import DogList from './components/DogList';
-// import DogImagesContainer from './components/DogImagesContainer';
 import BreedListContainer from './components/BreedListContainer';
+import DogGame1 from './components/DogGame1';
 
 function App() {
   return (
@@ -22,13 +21,14 @@ function App() {
                   <NavLink to="/studybreeds">
                     <Buttons buttonText={'Learn dog breeds'} buttonClass={"learnbutton"} />
                   </NavLink>
-                  <NavLink to="/">
+                  <NavLink to="/game">
                     <Buttons buttonText={'Test your skills and play a dog game'} buttonClass={"playgamebutton"} />
                   </NavLink>
                 </div>
               </div>
             )} />
 
+            <Route path="/game" component={DogGame1} />
             <Route path="/studybreeds" component={BreedListContainer} />
 
             {/* <DogImagesContainer /> */}
