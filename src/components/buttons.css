@@ -8,6 +8,7 @@
   box-shadow: 2px 2px 6px grey;
   text-align: center;
   color: #000000;
+  vertical-align: top;
 }
 
 .playgamebutton {
@@ -15,16 +16,16 @@
   color: yellow;
   font-size: 28px;
   height: 400px;
-  margin-left: 25px;
   width: 280px;
+  margin-left: 25px;
   background: url(https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_6884.jpg) center; 
 }
 
 .learnbutton{
-background-color: rgb(0, 183, 255);
+ background-color: rgb(0, 183, 255);
  color: #000000;
+ font-size: 25px;
  height: 400px;
  width: 280px;
- font-size: 25px;
  margin-right: 25px;
 }
