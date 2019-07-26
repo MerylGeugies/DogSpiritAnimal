@@ -3,7 +3,7 @@ import React from 'react';
 //import { Link } from 'react-router-dom'
 
 export default function BreedList(props) {
-  console.log('props.breed test', props.dogBreeds) 
+  console.log('props.dogBreeds test', props.dogBreeds) 
     return (
         <div>
           <h1>All dog breeds</h1>
