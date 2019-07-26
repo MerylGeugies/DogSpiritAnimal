@@ -47,30 +47,3 @@ function App() {
 }
 
 export default App;
-
-
-// import React from 'react';
-// import './App.css';
-// import BreedlistContainer from './components/BreedlistContainer';
-// //import DogImagesContainer from './components/DogImagesContainer';
-// import { Route } from 'react-router-dom';
-// import {Provider} from 'react-redux';
-// import store from './store'
-
-// function App() {
-//   return (
-//     <Provider store={store}>
-//       <main className="App">
-//         <h1> Dog Spirit Animal App</h1>
-
-//           <div>
-//             <Route exact path="/" component={BreedlistContainer} />
-//             {/* <Route path="/dog-breeds/:breed" component={DogImagesContainer} /> */}
-//           </div>
-
-//       </main>
-//     </Provider>
-//   );
-// }
-
-// export default App;
