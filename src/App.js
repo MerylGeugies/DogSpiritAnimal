@@ -8,7 +8,6 @@ import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
 // import DogImagesContainer from './components/DogImagesContainer';
 import BreedListContainer from './components/BreedListContainer';
 
-
 function App() {
   return (
     <Provider store={store}>
