@@ -5,7 +5,7 @@ import store from './store';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, NavLink, Route } from 'react-router-dom';
 import BreedListContainer from './components/BreedListContainer';
-import DogGame1 from './components/DogGame1';
+import DogGameContainer from './components/DogGameContainer';
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
               </div>
             )} />
 
-            <Route path="/game" component={DogGame1} />
+            <Route path="/game" component={DogGameContainer} />
             <Route path="/studybreeds" component={BreedListContainer} />
 
             {/* <DogImagesContainer /> */}
